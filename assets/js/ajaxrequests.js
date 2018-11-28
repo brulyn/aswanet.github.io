@@ -1,8 +1,8 @@
 function sendEmail() {
-  let clientEmail = document.getElementById("email");
-  let clientNames = document.getElementById("names");
-  let message = document.getElementById("message");
-  let telephone = document.getElementById("phonenumber");
+  let clientEmail = document.getElementById("email").value;
+  let clientNames = document.getElementById("names").value;
+  let message = document.getElementById("message").value;
+  let telephone = document.getElementById("phonenumber").value;
 
   let xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
