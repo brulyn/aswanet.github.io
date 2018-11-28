@@ -1,382 +1,1027 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>aswanet | Water & Sanitation Model</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cookie"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sintony"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+  </head>
 
-<body style="background-color:rgba(255,255,255,0);color:rgb(255,255,255);background-position:center;background-size:cover;background-repeat:no-repeat;">
-    <section style="background-image:url(&quot;assets/img/Picture2.png&quot;);background-position:center;background-size:cover;background-repeat:no-repeat;height:100vh;">
-        <section style="background-color:rgba(77,77,77,0.62);color:rgb(255,255,255);height:100vh;">
-            <nav class="navbar navbar-light navbar-expand-md" style="background-color:#414c56;color:rgb(254,254,254);font-family:'Nunito Sans', sans-serif;font-size:17px;height:60px;">
-                <div class="container-fluid"><a class="navbar-brand" href="#" style="color:rgba(255,255,255,0.9);font-family:Cookie, cursive;font-size:45px;"><img class="float-right align-items-center" src="assets/img/ASWANET%20LOGO_clear.png" style="height:36px;"></a><button class="navbar-toggler"
-                        data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#services" style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;">About Us</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#gallery" style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;">Gallery</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#faq" style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;">FAQ</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#contact" style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <h1 class="text-center d-flex justify-content-center" data-aos="fade-down" data-aos-duration="800" id="heading-text" style="font-family:Cookie, cursive;font-size:85px;">aswanet.</h1>
-            <div class="row" id="header-sub">
-                <div class="col col-lg-2 col-md-2"></div>
-                <div class="col col-lg-8 col-md-12 col-sm-12 col-12">
-                    <h4 class="text-center" data-aos="fade-up" data-aos-duration="450" id="subheading" style="font-weight:normal;font-size:29px;font-family:Cabin, sans-serif;font-style:normal;"><br>The integrated water and sanitation service model.&nbsp;<br></h4>
-                </div>
-                <div class="col"></div>
+  <body
+    style="background-color:rgba(255,255,255,0);color:rgb(255,255,255);background-position:center;background-size:cover;background-repeat:no-repeat;"
+  >
+    <section
+      style="background-image:url(&quot;assets/img/Picture2.png&quot;);background-position:center;background-size:cover;background-repeat:no-repeat;height:100vh;"
+    >
+      <section
+        style="background-color:rgba(77,77,77,0.62);color:rgb(255,255,255);height:100vh;"
+      >
+        <nav
+          class="navbar navbar-light navbar-expand-md"
+          style="background-color:#414c56;color:rgb(254,254,254);font-family:'Nunito Sans', sans-serif;font-size:17px;height:60px;"
+        >
+          <div class="container-fluid">
+            <a
+              class="navbar-brand"
+              href="#"
+              style="color:rgba(255,255,255,0.9);font-family:Cookie, cursive;font-size:45px;"
+              ><img
+                class="float-right align-items-center"
+                src="assets/img/ASWANET%20LOGO_clear.png"
+                style="height:36px;"/></a
+            ><button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <span class="sr-only">Toggle navigation</span
+              ><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="#services"
+                    style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="#gallery"
+                    style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="#faq"
+                    style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    href="#contact"
+                    style="color:rgba(66,180,244,0.9);font-family:'Nunito Sans', sans-serif;font-size:13px;"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
             </div>
-        </section>
-    </section>
-    <section id="services" style="background-color:#ffffff;color:rgb(55,55,55);padding-top:30px;">
-        <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="200" data-aos-once="true" class="text-center" style="font-family:'Nunito Sans', sans-serif;font-size:32px;font-weight:bold;">Our Services</h1>
-        <h3 class="text-center" data-aos="fade" data-aos-duration="600" data-aos-delay="250" data-aos-once="true" style="font-family:Roboto, sans-serif;font-size:18px;padding-bottom:20px;font-weight:normal;">We offer comprehensive engineering services including the following</h3>
-        <div data-aos="fade" data-aos-duration="300" data-aos-delay="150" data-aos-once="true" id="services_group" class="row" style="margin-left:5px;margin-right:5px;padding-bottom:50px;">
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-ios-paper-outline" style="font-size: 32px;color: rgb(226,49,49);"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Site Assessment<br></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Our team will visit your site and advise on proposed solutions for water service.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-ios-book" style="font-size: 32px;color: #e23131;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Hydrological Studies</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Geophysical investigations to identify the presence of groundwater.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-gear-a" style="font-size: 32px;color: #e23131;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Technical Designs</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Comprehensive engineering designs for any water and sanitation need.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-ios-settings-strong" style="font-size: 32px;color: #e23131;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Project Installation &amp; Construction</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Implementation of your project on schedule and according to budget.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"></div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="fab fa-nintendo-switch" style="font-size: 32px;color: #e23131;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Ongoing Maintenance</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Ongoing support by Aswanet technicians to ensure your water keeps flowing.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-3 col-md-3">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-ios-search-strong" style="font-size: 32px;color: #e23131;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">Research &amp; Design</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">Partnerships with international organizations and companies to invent and market new technologies.<br></h6>
-                </div>
-            </div>
+          </div>
+        </nav>
+        <h1
+          class="text-center d-flex justify-content-center"
+          data-aos="fade-down"
+          data-aos-duration="800"
+          id="heading-text"
+          style="font-family:Cookie, cursive;font-size:85px;"
+        >
+          aswanet.
+        </h1>
+        <div class="row" id="header-sub">
+          <div class="col col-lg-2 col-md-2"></div>
+          <div class="col col-lg-8 col-md-12 col-sm-12 col-12">
+            <h4
+              class="text-center"
+              data-aos="fade-up"
+              data-aos-duration="450"
+              id="subheading"
+              style="font-weight:normal;font-size:29px;font-family:Cabin, sans-serif;font-style:normal;"
+            >
+              <br />The integrated water and sanitation service model.&nbsp;<br />
+            </h4>
+          </div>
+          <div class="col"></div>
         </div>
+      </section>
     </section>
-    <section class="card-section-imagia" style="background-color:rgb(243,245,255);color:rgb(30,29,29);">
-        <h1 class="text-center" style="font-size:32px;font-family:'Nunito Sans', sans-serif;font-style:normal;font-weight:bold;">Our Team</h1>
-        <h3 class="text-center" style="font-family:Roboto, sans-serif;font-size:18px;padding-bottom:20px;font-weight:normal;">Meet the team behind Aswanet.</h3>
-        <div class="container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-aos-once="true"><div class="row text-center">
-    <div class="col-sm-6 col-md-4">
-        <div class="card-container-imagia">
-            <div class="card-imagia">
+    <section
+      id="services"
+      style="background-color:#ffffff;color:rgb(55,55,55);padding-top:30px;"
+    >
+      <h1
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="text-center"
+        style="font-family:'Nunito Sans', sans-serif;font-size:32px;font-weight:bold;"
+      >
+        Our Services
+      </h1>
+      <h3
+        class="text-center"
+        data-aos="fade"
+        data-aos-duration="600"
+        data-aos-delay="250"
+        data-aos-once="true"
+        style="font-family:Roboto, sans-serif;font-size:18px;padding-bottom:20px;font-weight:normal;"
+      >
+        We offer comprehensive engineering services including the following
+      </h3>
+      <div
+        data-aos="fade"
+        data-aos-duration="300"
+        data-aos-delay="150"
+        data-aos-once="true"
+        id="services_group"
+        class="row"
+        style="margin-left:5px;margin-right:5px;padding-bottom:50px;"
+      >
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-ios-paper-outline"
+              style="font-size: 32px;color: rgb(226,49,49);"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Site Assessment<br />
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Our team will visit your site and advise on proposed solutions for
+              water service.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-ios-book"
+              style="font-size: 32px;color: #e23131;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Hydrological Studies
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Geophysical investigations to identify the presence of
+              groundwater.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-gear-a"
+              style="font-size: 32px;color: #e23131;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Technical Designs
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Comprehensive engineering designs for any water and sanitation
+              need.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-ios-settings-strong"
+              style="font-size: 32px;color: #e23131;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Project Installation &amp; Construction
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Implementation of your project on schedule and according to
+              budget.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          ></div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="fab fa-nintendo-switch"
+              style="font-size: 32px;color: #e23131;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Ongoing Maintenance
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Ongoing support by Aswanet technicians to ensure your water keeps
+              flowing.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-3 col-md-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-ios-search-strong"
+              style="font-size: 32px;color: #e23131;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              Research &amp; Design
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              Partnerships with international organizations and companies to
+              invent and market new technologies.<br />
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="card-section-imagia"
+      style="background-color:rgb(243,245,255);color:rgb(30,29,29);"
+    >
+      <h1
+        class="text-center"
+        style="font-size:32px;font-family:'Nunito Sans', sans-serif;font-style:normal;font-weight:bold;"
+      >
+        Our Team
+      </h1>
+      <h3
+        class="text-center"
+        style="font-family:Roboto, sans-serif;font-size:18px;padding-bottom:20px;font-weight:normal;"
+      >
+        Meet the team behind Aswanet.
+      </h3>
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="50"
+        data-aos-once="true"
+      >
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4">
+            <div class="card-container-imagia">
+              <div class="card-imagia">
                 <div class="front-imagia">
-                    <div class="cover-imagia cover-gradient"></div>
-                    <div class="user-imagia"><img src="assets/img/Andrew2.jpg" class="img-circle" alt /></div>
-                    <div class="content-imagia">
-                        <h3 class="name-imagia">Andrew Mang</h3>
-                        <p class="subtitle-imagia">Chairman of the Board</p>
-                        <p class="text-center"><em>Passionate about creating a new ecosystem for water provision solutions and technologies.</em></p>
-                    </div>
-                    <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                  <div class="cover-imagia cover-gradient"></div>
+                  <div class="user-imagia">
+                    <img src="assets/img/Andrew2.jpg" class="img-circle" alt />
+                  </div>
+                  <div class="content-imagia">
+                    <h3 class="name-imagia">Andrew Mang</h3>
+                    <p class="subtitle-imagia">Chairman of the Board</p>
+                    <p class="text-center">
+                      <em
+                        >Passionate about creating a new ecosystem for water
+                        provision solutions and technologies.</em
+                      >
+                    </p>
+                  </div>
+                  <div class="footer-imagia">
+                    <span><i class="fa fa-plus"></i> More info</span>
+                  </div>
                 </div>
                 <div class="back-imagia">
-                    <div class="content-imagia content-back-imagia">
-                        <div>
-                            <h3 class="text-center">About Andrew</h3>
-                            <p class="text-center">Graduated from Duke University with a BS in Mechanical Engineering and Economics, did research into water provision in the developing world. He spent 4.5 years at Yext in New York City, where he learned about sales, marketing, and business operations while helping the team grow the company from a small private company into a large public corporation. After Yext, he began working at Aswanet full-time.</p>
-                        </div>
+                  <div class="content-imagia content-back-imagia">
+                    <div>
+                      <h3 class="text-center">About Andrew</h3>
+                      <p class="text-center">
+                        Graduated from Duke University with a BS in Mechanical
+                        Engineering and Economics, did research into water
+                        provision in the developing world. He spent 4.5 years at
+                        Yext in New York City, where he learned about sales,
+                        marketing, and business operations while helping the
+                        team grow the company from a small private company into
+                        a large public corporation. After Yext, he began working
+                        at Aswanet full-time.
+                      </p>
                     </div>
-                    <div class="footer-imagia">
-                        <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                  </div>
+                  <div class="footer-imagia">
+                    <div class="social-imagia text-center">
+                      <a href="#"><i class="fa fa-facebook"></i></a
+                      ><a href="#"><i class="fa fa-linkedin"></i></a
+                      ><a href="#"><i class="fa fa-twitter"></i></a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card-container-imagia">
-            <div class="card-imagia">
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card-container-imagia">
+              <div class="card-imagia">
                 <div class="front-imagia">
-                    <div class="cover-imagia cover-gradient"></div>
-                    <div class="user-imagia"><img src="assets/img/Oscar.jpg" class="img-circle" alt /></div>
-                    <div class="content-imagia">
-                        <h3 class="name-imagia">Oscar Odokonyero</h3>
-                        <p class="subtitle-imagia">Director General</p>
-                        <p class="text-center"><em>Has a great passion about creating a sustainable water service provision to communities in the third world.</em></p>
-                    </div>
-                    <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                  <div class="cover-imagia cover-gradient"></div>
+                  <div class="user-imagia">
+                    <img src="assets/img/Oscar.jpg" class="img-circle" alt />
+                  </div>
+                  <div class="content-imagia">
+                    <h3 class="name-imagia">Oscar Odokonyero</h3>
+                    <p class="subtitle-imagia">Director General</p>
+                    <p class="text-center">
+                      <em
+                        >Has a great passion about creating a sustainable water
+                        service provision to communities in the third world.</em
+                      >
+                    </p>
+                  </div>
+                  <div class="footer-imagia">
+                    <span><i class="fa fa-plus"></i> More info</span>
+                  </div>
                 </div>
                 <div class="back-imagia">
-                    <div class="content-imagia content-back-imagia">
-                        <div>
-                            <h3 class="text-center">About Oscar</h3>
-                            <p class="text-center">A Water Engineer who hails from Kampala, Uganda. Graduated from Kyambogo University in Kampala, and he has over ten years of experience with design, installation, and management of water and sanitation systems and technologies all over Uganda.</p>
-                        </div>
+                  <div class="content-imagia content-back-imagia">
+                    <div>
+                      <h3 class="text-center">About Oscar</h3>
+                      <p class="text-center">
+                        A Water Engineer who hails from Kampala, Uganda.
+                        Graduated from Kyambogo University in Kampala, and he
+                        has over ten years of experience with design,
+                        installation, and management of water and sanitation
+                        systems and technologies all over Uganda.
+                      </p>
                     </div>
-                    <div class="footer-imagia">
-                        <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                  </div>
+                  <div class="footer-imagia">
+                    <div class="social-imagia text-center">
+                      <a href="#"><i class="fa fa-facebook"></i></a
+                      ><a href="#"><i class="fa fa-linkedin"></i></a
+                      ><a href="#"><i class="fa fa-twitter"></i></a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card-container-imagia">
-            <div class="card-imagia">
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card-container-imagia">
+              <div class="card-imagia">
                 <div class="front-imagia">
-                    <div class="cover-imagia cover-gradient"></div>
-                    <div class="user-imagia"><img src="assets/img/wilson-photo.jpg" class="img-circle" alt /></div>
-                    <div class="content-imagia">
-                        <h3 class="name-imagia">Wilson Nkuranga</h3>
-                        <p class="subtitle-imagia">Managing Director</p>
-                        <p class="text-center"><em>Wilson is passionate about water provision because of its impact on people.</em></p>
-                    </div>
-                    <div class="footer-imagia"><span><i class="fa fa-plus"></i> More info</span></div>
+                  <div class="cover-imagia cover-gradient"></div>
+                  <div class="user-imagia">
+                    <img
+                      src="assets/img/wilson-photo.jpg"
+                      class="img-circle"
+                      alt
+                    />
+                  </div>
+                  <div class="content-imagia">
+                    <h3 class="name-imagia">Wilson Nkuranga</h3>
+                    <p class="subtitle-imagia">Managing Director</p>
+                    <p class="text-center">
+                      <em
+                        >Wilson is passionate about water provision because of
+                        its impact on people.</em
+                      >
+                    </p>
+                  </div>
+                  <div class="footer-imagia">
+                    <span><i class="fa fa-plus"></i> More info</span>
+                  </div>
                 </div>
                 <div class="back-imagia">
-                    <div class="content-imagia content-back-imagia">
-                        <div>
-                            <h3 class="text-center">About Wilson</h3>
-                            <p class="text-center">An accomplished engineer and architect who is passionate about the development of Rwanda. He was born and grew up as a refugee in Tanzania and moved back to Rwanda.  After finishing his studies, he worked for construction companies and then started his own successful company that has built houses, schools, and biogas systems all over Rwanda. Wilson is passionate about water provision because of its impact on people. He lives in Kigali and is responsible for running our operations in Rwanda.</p>
+                  <div class="content-imagia content-back-imagia">
+                    <div>
+                      <h3 class="text-center">About Wilson</h3>
+                      <p class="text-center">
+                        An accomplished engineer and architect who is passionate
+                        about the development of Rwanda. He was born and grew up
+                        as a refugee in Tanzania and moved back to Rwanda. After
+                        finishing his studies, he worked for construction
+                        companies and then started his own successful company
+                        that has built houses, schools, and biogas systems all
+                        over Rwanda. Wilson is passionate about water provision
+                        because of its impact on people. He lives in Kigali and
+                        is responsible for running our operations in Rwanda.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="footer-imagia">
+                    <div class="social-imagia text-center">
+                      <a href="#"><i class="fa fa-facebook"></i></a
+                      ><a href="#"><i class="fa fa-linkedin"></i></a
+                      ><a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+            <div class="col-sm-0 col-md-4">
+            </div>
+          -->
+          <!--
+            <div class="col-sm-6 col-md-4">
+                <div class="card-container-imagia">
+                    <div class="card-imagia">
+                        <div class="front-imagia">
+                            <div class="cover-imagia"><img src="https://unsplash.it/720/500?image=1067" alt /></div>
+                            <div class="user-imagia"><img src="https://unsplash.it/120/120?image=64" class="img-circle" alt /></div>
+                            <div class="content-imagia">
+                                <h3 class="name-imagia">John Doe</h3>
+                                <p class="subtitle-imagia">Subtitle</p>
+                                <p class="text-center"><em>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille quem diligas atque adiuves.</em></p>
+                            </div>
+                            <div class="footer-imagia"><span><i class="fa fa-plus"></i>More info</span></div>
+                        </div>
+                        <div class="back-imagia">
+                            <div class="content-imagia content-back-imagia">
+                                <div>
+                                    <h3 class="text-center">Lorem Ipsum</h3>
+                                    <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre
+                                        vestigia claritudinis pristinae monstrat admodum pauca.</p>
+                                </div>
+                            </div>
+                            <div class="footer-imagia">
+                                <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-imagia">
-                        <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
-                    </div>
                 </div>
             </div>
+          -->
         </div>
-    </div>
-    <!--<div class="col-sm-0 col-md-4">
-    </div>-->
-    <!--<div class="col-sm-6 col-md-4">
-        <div class="card-container-imagia">
-            <div class="card-imagia">
-                <div class="front-imagia">
-                    <div class="cover-imagia"><img src="https://unsplash.it/720/500?image=1067" alt /></div>
-                    <div class="user-imagia"><img src="https://unsplash.it/120/120?image=64" class="img-circle" alt /></div>
-                    <div class="content-imagia">
-                        <h3 class="name-imagia">John Doe</h3>
-                        <p class="subtitle-imagia">Subtitle</p>
-                        <p class="text-center"><em>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille quem diligas atque adiuves.</em></p>
-                    </div>
-                    <div class="footer-imagia"><span><i class="fa fa-plus"></i>More info</span></div>
-                </div>
-                <div class="back-imagia">
-                    <div class="content-imagia content-back-imagia">
-                        <div>
-                            <h3 class="text-center">Lorem Ipsum</h3>
-                            <p class="text-center">Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre
-                                vestigia claritudinis pristinae monstrat admodum pauca.</p>
-                        </div>
-                    </div>
-                    <div class="footer-imagia">
-                        <div class="social-imagia text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-</div></div>
+      </div>
     </section>
-    <section id="section2" style="background-color:#fcfcfc;color:rgb(31,33,44);">
-        <h1 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-size:32px;padding-bottom:20px;font-weight:bold;padding-top:30px;">Guiding Principles</h1>
-        <div id="s" class="row">
-            <div id="service" class="col-lg-2 col-md-2">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component">
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-4 col-md-4">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-ios-heart" style="font-size: 32px;color: #2eb0fa;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">We believe in people<br></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">We respect the dignity and worth of all people.</h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-4 col-md-4">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-android-locate" style="font-size: 32px;color: #2eb0fa;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">We keep it local</h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">We believe that water, sanitation, and hygiene problems are most effectively solved using local resources.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-2 col-md-2">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component">
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-2 col-md-2">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component">
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-4 col-md-4">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon ion-android-people" style="font-size: 32px;color: #2eb0fa;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">We keep good company<br></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">We search out trusted partners who share our vision and work together to build long-term relationships based on trust.<br></h6>
-                </div>
-            </div>
-            <div id="service" class="col-lg-4 col-md-4">
-                <div class="d-flex flex-column justify-content-center align-items-center bs-component"><i class="icon-trophy" style="font-size: 32px;color: #2eb0fa;"></i>
-                    <h4 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;">We keep our promises<br></h4>
-                    <h6 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;">We believe we owe it to the communities we serve, our volunteers, staff and donors to act with integrity and manage our resources effectively and efficiently.</h6>
-                </div>
-            </div>
+    <section
+      id="section2"
+      style="background-color:#fcfcfc;color:rgb(31,33,44);"
+    >
+      <h1
+        class="text-center"
+        style="font-family:'Nunito Sans', sans-serif;font-size:32px;padding-bottom:20px;font-weight:bold;padding-top:30px;"
+      >
+        Guiding Principles
+      </h1>
+      <div id="s" class="row">
+        <div id="service" class="col-lg-2 col-md-2">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            ></h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            ></h6>
+          </div>
         </div>
-    </section>
-    <section id="Mission" style="background-color:#eae8f9;color:rgb(80,80,80);padding-bottom:100px;">
-        <h1 class="text-center" style="font-family:'Nunito Sans', sans-serif;font-size:32px;padding-bottom:20px;font-weight:bold;padding-top:30px;">Our Mission</h1>
-        <div class="row" style="margin-right:5px;margin-left:5px;">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <p class="text-center">Aswanet works with people and partners to develop innovative and long-lasting solutions to the water, sanitation, and hygiene problems in the developing world. We strive to continually improve current technologies, to exepriment with promising
-                    new technologies, and to leverage resources to multiply our impact.</p>
-            </div>
+        <div id="service" class="col-lg-4 col-md-4">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-ios-heart"
+              style="font-size: 32px;color: #2eb0fa;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              We believe in people<br />
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              We respect the dignity and worth of all people.
+            </h6>
+          </div>
         </div>
+        <div id="service" class="col-lg-4 col-md-4">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-android-locate"
+              style="font-size: 32px;color: #2eb0fa;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              We keep it local
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              We believe that water, sanitation, and hygiene problems are most
+              effectively solved using local resources.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-2 col-md-2">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            ></h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            ></h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-2 col-md-2">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            ></h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            ></h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-4 col-md-4">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i
+              class="icon ion-android-people"
+              style="font-size: 32px;color: #2eb0fa;"
+            ></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              We keep good company<br />
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              We search out trusted partners who share our vision and work
+              together to build long-term relationships based on trust.<br />
+            </h6>
+          </div>
+        </div>
+        <div id="service" class="col-lg-4 col-md-4">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center bs-component"
+          >
+            <i class="icon-trophy" style="font-size: 32px;color: #2eb0fa;"></i>
+            <h4
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:500;padding-left:10px;padding-right:10px;"
+            >
+              We keep our promises<br />
+            </h4>
+            <h6
+              class="text-center"
+              style="font-family:'Nunito Sans', sans-serif;font-weight:300;padding-left:20px;padding-right:20px;font-size:12px;"
+            >
+              We believe we owe it to the communities we serve, our volunteers,
+              staff and donors to act with integrity and manage our resources
+              effectively and efficiently.
+            </h6>
+          </div>
+        </div>
+      </div>
     </section>
-    <div id="gallery" class="photo-gallery" style="background-color:rgb(255,255,255);color:rgb(0,0,0);"></div>
+    <section
+      id="Mission"
+      style="background-color:#eae8f9;color:rgb(80,80,80);padding-bottom:100px;"
+    >
+      <h1
+        class="text-center"
+        style="font-family:'Nunito Sans', sans-serif;font-size:32px;padding-bottom:20px;font-weight:bold;padding-top:30px;"
+      >
+        Our Mission
+      </h1>
+      <div class="row" style="margin-right:5px;margin-left:5px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="text-center">
+            Aswanet works with people and partners to develop innovative and
+            long-lasting solutions to the water, sanitation, and hygiene
+            problems in the developing world. We strive to continually improve
+            current technologies, to exepriment with promising new technologies,
+            and to leverage resources to multiply our impact.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div
+      id="gallery"
+      class="photo-gallery"
+      style="background-color:rgb(255,255,255);color:rgb(0,0,0);"
+    ></div>
     <div class="simple-slider" style="padding:30px;background-color:#ffffff;">
-        <div class="container" style="color:rgb(50,49,49);">
-            <div class="intro">
-                <h2 class="text-center" style="font-family:'Open Sans', sans-serif;font-size:33px;font-weight:bold;">Gallery</h2>
-                <p class="text-center" style="font-family:'Nunito Sans', sans-serif;font-weight:300;">Here is our team in action.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image:url(&quot;assets/img/255100_10150640523100360_5905307_n.jpg&quot;);background-size:auto;"></div>
-                            <div class="swiper-slide" style="background-image:url(&quot;assets/img/260264_1455900601087_4836321_n.jpg&quot;);background-size:auto;"></div>
-                            <div class="swiper-slide" style="background-image:url(&quot;assets/img/264081_1455906681239_1946484_n.jpg&quot;);background-size:contain;"></div>
-                            <div class="swiper-slide" style="background-image:url(&quot;assets/img/Picture1.jpg&quot;);background-size:contain;"></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" style="color:rgb(50,49,49);">
+        <div class="intro">
+          <h2
+            class="text-center"
+            style="font-family:'Open Sans', sans-serif;font-size:33px;font-weight:bold;"
+          >
+            Gallery
+          </h2>
+          <p
+            class="text-center"
+            style="font-family:'Nunito Sans', sans-serif;font-weight:300;"
+          >
+            Here is our team in action.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image:url(&quot;assets/img/255100_10150640523100360_5905307_n.jpg&quot;);background-size:auto;"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image:url(&quot;assets/img/260264_1455900601087_4836321_n.jpg&quot;);background-size:auto;"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image:url(&quot;assets/img/264081_1455906681239_1946484_n.jpg&quot;);background-size:contain;"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image:url(&quot;assets/img/Picture1.jpg&quot;);background-size:contain;"
+                ></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section id="faq" style="color:rgb(74,74,74);background-color:#ffffff;padding-top:20px;">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center" style="font-family:'Open Sans', sans-serif;font-weight:bold;">Frequently asked questions</h2>
-            </div>
-            <div class="row" style="padding-top:30px;">
-                <div class="col col-md-12 col-lg-6 col-sm-12">
-                    <h3 class="text-center">Where are you based?</h3>
-                    <p style="font-style:italic;">Our team is headquartered in Kigali, Rwanda, but we have satellite offices in Kampala, Uganda and New York City, USA.<br></p>
-                </div>
-                <div class="col col-md-12 col-lg-6 col-sm-12">
-                    <h3 class="text-center">How much will it cost?</h3>
-                    <p style="font-style:italic;">Every solution is different, and our team will provide an appropriate estimate based on our experience and your needs.<br></p>
-                </div>
-            </div>
-            <div class="row" style="padding-top:30px;">
-                <div class="col col-md-12 col-lg-6 col-sm-12">
-                    <h3 class="text-center">How are you different from the others?<br></h3>
-                    <p style="font-style:italic;">The Aswanet team approaches each project from a "beginning to end" mindset and determines which solution is best. The team are not technology providers; rather they put different technologies together to provide the optimal solution
-                        for your needs. The team combines international best practices with intimate local knowledge and experience.<br></p>
-                </div>
-                <div class="col col-md-12 col-lg-6 col-sm-12">
-                    <h3 class="text-center">I already have a utility connection but it's unreliable. Can you help?<br></h3>
-                    <p style="font-style:italic;">Yes, our team has many solutions that will help with unreliable utility connections. Please contact us to schedule a site visit.<br></p>
-                </div>
-            </div>
-            <div class="row" style="padding-top:30px;">
-                <div class="col">
-                    <h3 class="text-center">I'm planning a project or investment<br>in Africa and need help getting enough water. Can you help me?<br></h3>
-                    <p class="text-center" style="font-style:italic;">Absolutely - please contact us below.<br></p>
-                </div>
-            </div>
+    <section
+      id="faq"
+      style="color:rgb(74,74,74);background-color:#ffffff;padding-top:20px;"
+    >
+      <div class="container">
+        <div class="intro">
+          <h2
+            class="text-center"
+            style="font-family:'Open Sans', sans-serif;font-weight:bold;"
+          >
+            Frequently asked questions
+          </h2>
         </div>
+        <div class="row" style="padding-top:30px;">
+          <div class="col col-md-12 col-lg-6 col-sm-12">
+            <h3 class="text-center">Where are you based?</h3>
+            <p style="font-style:italic;">
+              Our team is headquartered in Kigali, Rwanda, but we have satellite
+              offices in Kampala, Uganda and New York City, USA.<br />
+            </p>
+          </div>
+          <div class="col col-md-12 col-lg-6 col-sm-12">
+            <h3 class="text-center">How much will it cost?</h3>
+            <p style="font-style:italic;">
+              Every solution is different, and our team will provide an
+              appropriate estimate based on our experience and your needs.<br />
+            </p>
+          </div>
+        </div>
+        <div class="row" style="padding-top:30px;">
+          <div class="col col-md-12 col-lg-6 col-sm-12">
+            <h3 class="text-center">
+              How are you different from the others?<br />
+            </h3>
+            <p style="font-style:italic;">
+              The Aswanet team approaches each project from a "beginning to end"
+              mindset and determines which solution is best. The team are not
+              technology providers; rather they put different technologies
+              together to provide the optimal solution for your needs. The team
+              combines international best practices with intimate local
+              knowledge and experience.<br />
+            </p>
+          </div>
+          <div class="col col-md-12 col-lg-6 col-sm-12">
+            <h3 class="text-center">
+              I already have a utility connection but it's unreliable. Can you
+              help?<br />
+            </h3>
+            <p style="font-style:italic;">
+              Yes, our team has many solutions that will help with unreliable
+              utility connections. Please contact us to schedule a site
+              visit.<br />
+            </p>
+          </div>
+        </div>
+        <div class="row" style="padding-top:30px;">
+          <div class="col">
+            <h3 class="text-center">
+              I'm planning a project or investment<br />in Africa and need help
+              getting enough water. Can you help me?<br />
+            </h3>
+            <p class="text-center" style="font-style:italic;">
+              Absolutely - please contact us below.<br />
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contact" style="background-color:#ffffff;color:rgb(204,204,204);padding-top:40px;">
-        <div class="container" id="info-container" style="background-color:#eeecff;">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center text-info">Contact Us</h2>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6" id="contact-box">
-                    <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span style="color:rgb(68,68,68);">KG 563 St. Gasabo Kacyiru Kigali Rwanda</span></div>
-                    <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span style="color:rgb(68,68,68);">info@aswanet.com</span></div>
-                    <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span style="color:rgb(68,68,68);">+250 788 504 236</span></div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 site-form">
-                    <form action="mailto:info@aswanet.com" method="post" enctype="text/plain" id="my-form">
-                        <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" name="names" placeholder="Name" id="lastname" /></div>
-                        <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input class="form-control" type="tel" name="phonenumber" required="" placeholder="Phone" id="phonenumber"></div>
-                        <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" name="email" required="" placeholder="Email" id="email"></div>
-                        <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" rows="8" name="messages" required="" placeholder="Message"></textarea></div><button class="btn btn-light btn-lg" type="submit" id="form-btn">SEND </button></form>
-                </div>
-                <div class="clearfix"></div>
+    <section
+      id="contact"
+      style="background-color:#ffffff;color:rgb(204,204,204);padding-top:40px;"
+    >
+      <div
+        class="container"
+        id="info-container"
+        style="background-color:#eeecff;"
+      >
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center text-info">Contact Us</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6" id="contact-box">
+            <div class="info-box">
+              <i class="fa fa-map-marker my-info-icons"></i
+              ><span class="text-uppercase text-info">Address: </span
+              ><span style="color:rgb(68,68,68);"
+                >KG 563 St. Gasabo Kacyiru Kigali Rwanda</span
+              >
             </div>
+            <div class="info-box">
+              <i class="fa fa-envelope my-info-icons"></i
+              ><span class="text-uppercase text-info">Email: </span
+              ><span style="color:rgb(68,68,68);">info@aswanet.com</span>
+            </div>
+            <div class="info-box">
+              <i class="fa fa-phone-square my-info-icons"></i
+              ><span class="text-uppercase text-info">Phone: </span
+              ><span style="color:rgb(68,68,68);">+250 788 504 236</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 site-form">
+            <form
+              action="mailto:info@aswanet.com"
+              method="post"
+              enctype="text/plain"
+              id="my-form"
+            >
+              <div class="form-group">
+                <label class="sr-only" for="names">Name</label
+                ><input
+                  class="form-control"
+                  type="text"
+                  name="names"
+                  placeholder="Name"
+                  id="names"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="phonenumber">Phone Number</label
+                ><input
+                  class="form-control"
+                  type="tel"
+                  name="phonenumber"
+                  required=""
+                  placeholder="Phone"
+                  id="phonenumber"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">Email Address</label
+                ><input
+                  class="form-control"
+                  type="text"
+                  name="email"
+                  required=""
+                  placeholder="Email"
+                  id="email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="messages">Message</label
+                ><textarea
+                  class="form-control"
+                  rows="8"
+                  name="messages"
+                  required=""
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-light btn-lg" type="button" onClick="sendEmail();" id="form-btn">
+                SEND
+              </button>
+            </form>
+          </div>
+          <div class="clearfix"></div>
         </div>
+      </div>
     </section>
     <footer style="background-color:rgb(254,255,255);">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 footer-navigation">
-                <h3><a href="#" style="color:rgb(0,0,0);"></a></h3>
-                <p class="links" style="font-family:'Nunito Sans', sans-serif;"><a href="index.html" class="footer-link" style="font-family:'Nunito Sans', sans-serif;">Home</a><strong> ·  ·  · </strong><a href="#services" style="font-family:'Nunito Sans', sans-serif;">About</a><strong> · </strong><a href="#faq" style="font-family:'Nunito Sans', sans-serif;">FAQ</a><strong> · </strong>
-                    <a
-                        href="#contact">Contact</a>
-                </p>
-                <p class="company-name" style="color:rgb(80,81,82);font-family:'Nunito Sans', sans-serif;">aswanet © 2018</p>
-            </div>
-            <div class="col-sm-6 col-md-4 footer-contacts">
-                <div><span class="fa fa-map-marker footer-contacts-icon" style="color:rgb(0,0,0);background-color:rgb(190,192,193);"> </span>
-                    <p class="footer-para" style="color:rgb(0,0,0);font-family:'Nunito Sans', sans-serif;"><span class="new-line-span">KG 563 St. Gasabo</span>Kacyiru, Rwanda</p>
-                </div>
-                <div style="font-family:'Nunito Sans', sans-serif;"><i class="fa fa-phone footer-contacts-icon" style="color:rgb(0,0,0);background-color:rgb(190,192,193);"></i>
-                    <p class="footer-center-info email text-left" style="color:rgb(0,0,0);">+250 788 504 236<br></p>
-                </div>
-                <div><i class="fa fa-envelope footer-contacts-icon" style="color:rgb(0,0,0);background-color:rgb(190,192,193);"></i>
-                    <p> <a href="mailto:info@aswanet.com" target="_blank" style="font-family:'Nunito Sans', sans-serif;">info@aswanet.com</a></p>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-md-4 footer-about">
-                <h4 style="color:rgb(1,1,1);font-family:'Nunito Sans', sans-serif;">About the company</h4>
-                <p style="color:rgb(58,59,59);font-family:'Nunito Sans', sans-serif;font-weight:300;"><br>Aswanet works with people and partners to develop innovative and long-lasting solutions to the water, sanitation, and hygiene problems in the developing world. We strive to continually improve current technologies, to exepriment with
-                    promising new technologies, and to leverage resources to multiply our impact.<br><br></p>
-                <div class="social-links social-icons"><a href="#" style="color:rgb(0,0,0);background-color:rgb(190,192,193);"><i class="fa fa-facebook"></i></a><a href="#" style="background-color:rgb(190,192,193);"><i class="fa fa-twitter" style="color:rgb(0,0,0);"></i></a><a href="#" style="color:rgb(0,0,0);background-color:rgb(190,192,193);"><i class="fa fa-linkedin"></i></a></div>
-            </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+          <h3><a href="#" style="color:rgb(0,0,0);"></a></h3>
+          <p class="links" style="font-family:'Nunito Sans', sans-serif;">
+            <a
+              href="index.html"
+              class="footer-link"
+              style="font-family:'Nunito Sans', sans-serif;"
+              >Home</a
+            ><strong> · · · </strong
+            ><a href="#services" style="font-family:'Nunito Sans', sans-serif;"
+              >About</a
+            ><strong> · </strong
+            ><a href="#faq" style="font-family:'Nunito Sans', sans-serif;"
+              >FAQ</a
+            ><strong> · </strong> <a href="#contact">Contact</a>
+          </p>
+          <p
+            class="company-name"
+            style="color:rgb(80,81,82);font-family:'Nunito Sans', sans-serif;"
+          >
+            aswanet © 2018
+          </p>
         </div>
+        <div class="col-sm-6 col-md-4 footer-contacts">
+          <div>
+            <span
+              class="fa fa-map-marker footer-contacts-icon"
+              style="color:rgb(0,0,0);background-color:rgb(190,192,193);"
+            >
+            </span>
+            <p
+              class="footer-para"
+              style="color:rgb(0,0,0);font-family:'Nunito Sans', sans-serif;"
+            >
+              <span class="new-line-span">KG 563 St. Gasabo</span>Kacyiru,
+              Rwanda
+            </p>
+          </div>
+          <div style="font-family:'Nunito Sans', sans-serif;">
+            <i
+              class="fa fa-phone footer-contacts-icon"
+              style="color:rgb(0,0,0);background-color:rgb(190,192,193);"
+            ></i>
+            <p
+              class="footer-center-info email text-left"
+              style="color:rgb(0,0,0);"
+            >
+              +250 788 504 236<br />
+            </p>
+          </div>
+          <div>
+            <i
+              class="fa fa-envelope footer-contacts-icon"
+              style="color:rgb(0,0,0);background-color:rgb(190,192,193);"
+            ></i>
+            <p>
+              <a
+                href="mailto:info@aswanet.com"
+                target="_blank"
+                style="font-family:'Nunito Sans', sans-serif;"
+                >info@aswanet.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-4 footer-about">
+          <h4 style="color:rgb(1,1,1);font-family:'Nunito Sans', sans-serif;">
+            About the company
+          </h4>
+          <p
+            style="color:rgb(58,59,59);font-family:'Nunito Sans', sans-serif;font-weight:300;"
+          >
+            <br />Aswanet works with people and partners to develop innovative
+            and long-lasting solutions to the water, sanitation, and hygiene
+            problems in the developing world. We strive to continually improve
+            current technologies, to exepriment with promising new technologies,
+            and to leverage resources to multiply our impact.<br /><br />
+          </p>
+
+          <div class="social-links social-icons">
+            <a
+              href="#"
+              style="color:rgb(0,0,0);background-color:rgb(190,192,193);"
+              ><i class="fa fa-facebook"></i></a
+            ><a href="#" style="background-color:rgb(190,192,193);"
+              ><i class="fa fa-twitter" style="color:rgb(0,0,0);"></i></a
+            ><a
+              href="#"
+              style="color:rgb(0,0,0);background-color:rgb(190,192,193);"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
@@ -384,6 +1029,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/script.min.js"></script>
-</body>
-
+    <script src="assets/js/ajaxrequests.js"></script>
+  </body>
 </html>
