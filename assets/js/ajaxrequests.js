@@ -8,6 +8,10 @@ function sendEmail() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
       console.log("sent");
+      document.getElementById("email").value = "";
+      document.getElementById("names").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("phonenumber").value = "";
     }
   };
 
