@@ -4,6 +4,8 @@ function sendEmail() {
   let message = document.getElementById("message").value;
   let telephone = document.getElementById("phonenumber").value;
 
+  document.getElementById("form-btn").disabled = true;
+  document.getElementById("form-btn").innerHTML = "sending...";
   let xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
@@ -12,6 +14,8 @@ function sendEmail() {
       document.getElementById("names").value = "";
       document.getElementById("message").value = "";
       document.getElementById("phonenumber").value = "";
+      document.getElementById("form-btn").disabled = false;
+      document.getElementById("form-btn").innerHTML = "SEND";
     }
   };
 
